@@ -5,6 +5,7 @@ h1.T {
 
 h1 {
     font-family: roboto;
+    margin: 0;
 }
 
 div {
@@ -29,18 +30,19 @@ div.bottom {
     display: flex;
     justify-content: space-evenly;
     margin-top: 70px;
+    gap : 20px
 }
 
 div.bottom-Left {
     border-style: groove;
     height: 250x;
-    width: 750px;
+    max-width: 750px;
 }
 
 div.bottom-right {
     border-style: groove;
     height: 250x;
-    width: 750px;
+    max-width: 750px;
 
 }
 
@@ -82,4 +84,37 @@ div.B {
     display: flex;
     justify-content: center;
     align-items: last baseline;
+}
+
+/* @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+} */
+
+@media only screen  and (max-width:768px) {
+    
+    div.bottom {
+         flex-direction: column;
+         gap: 20px;
+        }
+    
+         div.n {
+             flex-direction: column;
+         }
+         
+
+}
+
+@media only screen and (min-width : 768px) {
+div.bottom-Left {
+       width: 750px;
+    }
+    
+    div.bottom-right {
+        
+        width: 750px;
+
+    }
 }
