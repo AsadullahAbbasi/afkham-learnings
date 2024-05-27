@@ -1,0 +1,141 @@
+/*Extra*/
+body {
+  background-color: black;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.Main {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-inline: 35px;
+}
+
+div.Restuarant {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*Div.Image*/
+
+img.Restuarant {
+  max-width: 350px;
+  height: 250px;
+}
+
+/*Div.Text*/
+
+div.Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+p.Red {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+h1.Stylish {
+  font-family: Rodchenk;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Roboto {
+  font-family: Roboto;
+  font-size: 40px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.Gray {
+  color: gray;
+}
+
+p.Gray img {
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  border-radius: 25px;
+  border-style: groove;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-self: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img.Arrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: Roboto;
+  src: url(./Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rodchenk;
+  src: url(./Rodchenk.ttf);
+}
+
+/*Media Quiery*/
+
+@media only screen and (max-width: 769px) {
+  img.Restuarant {
+    width: 1000px;
+    height: 150px;
+    gap: 20px;
+  }
+
+  div.Main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  h1 {
+    font-size: xx-small;
+    margin: 0;
+  }
+
+  p {
+    font-size: small;
+    margin: 0;
+  }
+
+  div.Restuarant {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+}
